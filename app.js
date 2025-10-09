@@ -2,25 +2,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // ==========================================================================
-// 공통 HTML 삽입
-// ==========================================================================
-async function includeHTML() {
-  const header = document.querySelector(".l-header");
-  const footer = document.querySelector(".l-footer");
-
-  // fetch를 사용해 각 파일을 비동기로 불러옵니다.
-  const fetchHeader = fetch('./_header.html').then(response => response.text());
-  const fetchFooter = fetch('./_footer.html').then(response => response.text());
-
-  // 두 파일이 모두 로드될 때까지 기다립니다.
-  const [headerHTML, footerHTML] = await Promise.all([fetchHeader, fetchFooter]);
-
-  if (header) header.innerHTML = headerHTML;
-  if (footer) footer.innerHTML = footerHTML;
-}
-
-
-// ==========================================================================
 // 전역 변수 및 헬퍼 함수
 // ==========================================================================
 let scrollerElement = null; // Lenis 스크롤 컨테이너
@@ -165,7 +146,6 @@ const initSinglePageAnimations = () => {
 // 페이지 로드 시 실행
 // ==========================================================================
 document.addEventListener("DOMContentLoaded", async () => {
-  await includeHTML(); // 0. 공통 HTML 삽입
   
   setActiveNavigation(); // 1. 네비게이션 활성화
   initSmoothScroll();   // 2. 부드러운 스크롤 초기화
