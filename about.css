@@ -652,6 +652,64 @@ a {
   transition: all 0.3s ease-out;
 }
 
+/* --- Loading Animation --- */
+.c-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* 100svh 대신 vh 사용 권장 */
+    z-index: 99999;
+    overflow: hidden;
+    pointer-events: none; /* 애니메이션 후 클릭 방지 해제 */
+}
+
+.c-loading__half {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #111;
+}
+
+.c-loading__top {
+    top: 0;
+}
+
+.c-loading__bottom {
+    bottom: 0;
+}
+
+.c-loading__text {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-family: 'PP Neue Montreal Medium', sans-serif;
+    color: var(--system-white);
+    z-index: 2;
+    margin: 0;
+    overflow: hidden; /* span이 밖으로 나가는 것을 숨김 */
+}
+
+.c-loading__text span {
+    display: block;
+    line-height: 1;
+    padding: 0 0.1em;
+}
+/* u-space 스타일이 이미 존재하므로 별도 추가 불필요 */
+.c-loading__text .u-space {
+    width: 1em;
+}
+
+@media (max-width: 767px) {
+  .c-loading__text {
+    font-size: 2.4rem;
+  }
+}
+
 /* ==========================================================================
    7. Page-Specific Styles (p-*)
    ========================================================================== */

@@ -1,6 +1,65 @@
 // GSAP 플러그인 등록
 gsap.registerPlugin(ScrollTrigger);
 
+
+// ==========================================================================
+// 로딩 애니메이션
+// ==========================================================================
+const playLoadingAnimation = () => {
+    // Promise를 반환하여 애니메이션 종료 시점을 알려줌
+    return new Promise(resolve => {
+        const loadingText = Array.from(document.querySelectorAll('.c-loading__text span'));
+        const topHalf = document.querySelector('.c-loading__top');
+        const bottomHalf = document.querySelector('.c-loading__bottom');
+        const loadingContainer = document.querySelector('.c-loading');
+        
+        // 텍스트 홀수/짝수 분리
+        const oddTexts = loadingText.filter((_, i) => i % 2 === 0);
+        const evenTexts = loadingText.filter((_, i) => i % 2 !== 0);
+
+        // 초기 위치 설정
+        gsap.set(oddTexts, { y: '-100%' });
+        gsap.set(evenTexts, { y: '100%' });
+
+        const tl = gsap.timeline({
+            onComplete: () => {
+                document.body.style.overflow = ''; // 스크롤 잠금 해제
+                resolve(); // Promise 완료
+            }
+        });
+
+        tl.to(loadingText, {
+            y: '0%',
+            duration: 1,
+            ease: 'expo.inOut',
+            stagger: 0.05
+        }, 0.5)
+        .to(oddTexts, {
+            y: '-100%',
+            duration: 1,
+            ease: 'expo.inOut',
+            stagger: 0.05
+        }, '+=0.3')
+        .to(evenTexts, {
+            y: '100%',
+            duration: 1,
+            ease: 'expo.inOut',
+            stagger: 0.05
+        }, '<')
+        .to(topHalf, {
+            y: '-100%',
+            ease: 'expo.inOut',
+            duration: 1.2
+        }, '-=0.8')
+        .to(bottomHalf, {
+            y: '100%',
+            ease: 'expo.inOut',
+            duration: 1.2
+        }, '<')
+        .set(loadingContainer, { display: 'none' });
+    });
+};
+
 // ==========================================================================
 // 전역 변수 및 헬퍼 함수
 // ==========================================================================
@@ -146,6 +205,7 @@ const initSinglePageAnimations = () => {
 // 페이지 로드 시 실행
 // ==========================================================================
 document.addEventListener("DOMContentLoaded", async () => {
+  await playLoadingAnimation(); // 0. 로딩 애니메이션 완료 대기
   
   setActiveNavigation(); // 1. 네비게이션 활성화
   initSmoothScroll();   // 2. 부드러운 스크롤 초기화

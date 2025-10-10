@@ -15,7 +15,29 @@
   <link rel="stylesheet" href="./about.css" />
 </head>
 
-<body id="page-home">
+<body id="page-home" style="overflow: hidden;"> <!-- 스크롤 임시 비활성화 -->
+    
+  <!-- ▼▼▼▼▼ 로딩 애니메이션 HTML 추가 ▼▼▼▼▼ -->
+  <div class="c-loading">
+      <div class="c-loading__half c-loading__top"></div>
+      <div class="c-loading__half c-loading__bottom"></div>
+      <p class="c-loading__text">
+          <span>부</span>
+          <span>천</span>
+          <span>청</span>
+          <span>년</span>
+          <span>평</span>
+          <span>화</span>
+          <span>포</span>
+          <span>럼</span>
+          <span class="u-space"></span>
+          <span>2</span>
+          <span>0</span>
+          <span>2</span>
+          <span>5</span>
+      </p>
+  </div>
+
   <header class="l-header">
     <div class="l-header__inner">
       <a href="./index.html" class="l-header__logo">PIECE of PEACE</a>
@@ -222,6 +244,40 @@
       </div>
 
       <footer class="l-footer">
+        <div class="l-footer__grid">
+          <ul class="l-footer__ul l-footer__ul01">
+            <li class="l-footer__li-main">Contact</li>
+            <li class="l-footer__mail"><a href="mailto:yanguun94@gmail.com">yanguun94@gmail.com</a></li>
+          </ul>
+          <ul class="l-footer__ul l-footer__ul02">
+            <li class="l-footer__li-main">Nav</li>
+            <li class="l-footer__li"><a href="./index.html">Home</a></li>
+            <li class="l-footer__li"><a href="./session-1.html">Session 1</a></li>
+            <li class="l-footer__li"><a href="./session-2.html">Session 2</a></li>
+            <li class="l-footer__li"><a href="./session-3.html">Session 3</a></li>
+          </ul>
+          <ul class="l-footer__ul l-footer__ul03">
+            <li class="l-footer__li-main">Scope</li>
+            <li class="l-footer__li">Static Develop</li>
+            <li class="l-footer__li">Motion Develop</li>
+            <li class="l-footer__li">(Design)</li>
+          </ul>
+        </div>
+        <p class="l-footer__big-type" data-footer-type="" aria-hidden="true">
+          <span class="hide"><span class="show">부</span></span>
+          <span class="hide"><span class="show">천</span></span>
+          <span class="hide"><span class="show">청</span></span>
+          <span class="hide"><span class="show">년</span></span>
+          <span class="hide"><span class="show">평</span></span>
+          <span class="hide"><span class="show">화</span></span>
+          <span class="hide"><span class="show">포</span></span>
+          <span class="hide"><span class="show">럼</span></span>
+          <span class="hide u-space"><span class="show"></span></span>
+          <span class="hide"><span class="show">2</span></span>
+          <span class="hide"><span class="show">0</span></span>
+          <span class="hide"><span class="show">2</span></span>
+          <span class="hide"><span class="show">5</span></span>
+        </p>
       </footer>
     </main>
   </div>
