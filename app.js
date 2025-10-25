@@ -205,20 +205,23 @@ const initSinglePageAnimations = () => {
 // 페이지 로드 시 실행
 // ==========================================================================
 document.addEventListener("DOMContentLoaded", async () => {
-  await playLoadingAnimation(); // 0. 로딩 애니메이션 완료 대기
-  
-  setActiveNavigation(); // 1. 네비게이션 활성화
-  initSmoothScroll();   // 2. 부드러운 스크롤 초기화
-  animatePageTitle();   // 3. 페이지 타이틀 애니메이션
-  initCommonAnimations(); // 4. 공통 애니메이션(푸터 등) 초기화
-
   // 5. 현재 페이지 ID에 따라 특정 애니메이션 실행
   const pageId = document.body.id;
   switch (pageId) {
     case "page-home":
+      document.querySelector('video#bgVideo').controls = false;
+      await playLoadingAnimation(); // 0. 로딩 애니메이션 완료 대기
+      setActiveNavigation(); // 1. 네비게이션 활성화
+      initSmoothScroll();   // 2. 부드러운 스크롤 초기화
+      animatePageTitle();   // 3. 페이지 타이틀 애니메이션
+      initCommonAnimations(); // 4. 공통 애니메이션(푸터 등) 초기화
       initHomeAnimations();
       break;
     case "page-single":
+      setActiveNavigation(); // 1. 네비게이션 활성화
+      initSmoothScroll();   // 2. 부드러운 스크롤 초기화
+      animatePageTitle();   // 3. 페이지 타이틀 애니메이션
+      initCommonAnimations(); // 4. 공통 애니메이션(푸터 등) 초기화
       initSinglePageAnimations();
       break;
   }
