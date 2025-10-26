@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="부천청년평화포럼2025" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5" />
+  <title>부천청년평화포럼2025</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Presentation', 'sans-serif'],
+            display: ['KboDiamondGothic', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0A2C5A',
+            accent: '#4DDFFF',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style type="text/css">
+    @font-face {
+        font-family: 'KboDiamondGothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+        font-weight: 700;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Presentation';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Presentation';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2') format('woff2');
+        font-weight: 500;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Presentation';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2') format('woff2');
+        font-weight: 600;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Presentation';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-7Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-display: swap;
+    }
+    html { font-size: 0.7320644217vw; height: 100svh; overflow: hidden; overflow-x: clip; scrollbar-width: none; -ms-overflow-style: none; }
+    @media (max-width: 767px) { html { font-size: 2.6666666667vw; } }
+    html::-webkit-scrollbar, body::-webkit-scrollbar, .lenis::-webkit-scrollbar { display: none; }
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-feature-settings: "palt"; }
+    
+    /* --- GSAP Animation Helpers (삭제 금지) --- */
+    .l-header__list.is-current::after { width: 100%; }
+    [data-page-title] .hide, [data-footer-type] .hide { height: fit-content; overflow: hidden; }
+    [data-page-title] .show, [data-footer-type] .show { display: inline-block; transform: translateY(-100%); }
+    [data-page-title] .hide:nth-last-of-type(2n) .show, [data-footer-type] .hide:nth-last-of-type(2n) .show { transform: translateY(100%); }
+    [data-text-hide] { display: block; height: fit-content; overflow: hidden; }
+    [data-text-show] { display: inline-block; transform: translateY(100%); }
+  </style>
+</head>
+
+<body id="page-home" class="font-sans text-[#222] bg-white relative w-full max-w-[2700px] h-[100svh] m-auto overflow-clip overscroll-none" style="overflow: hidden;">
+    
+  <div class="c-loading fixed top-0 left-0 w-full h-[100vh] z-[99999] overflow-hidden pointer-events-none">
+      <div class="c-loading__half c-loading__top absolute left-0 w-full h-1/2 bg-gray-950 top-0"></div>
+      <div class="c-loading__half c-loading__bottom absolute left-0 w-full h-1/2 bg-gray-950 bottom-0"></div>
+      <p class="c-loading__text absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] m-0 overflow-hidden flex text-[2rem] text-white md:text-[2.4rem]">
+          <span>2</span><span>0</span><span>2</span><span>5</span><span class="w-[1em]"></span>
+          <span>부</span><span>천</span><span>청</span><span>년</span><span>평</span><span>화</span><span>포</span><span>럼</span>
+      </p>
+  </div>
+
+  <header class="fixed top-0 left-0 w-full z-[100] pt-4 pb-8 bg-gradient-to-b from-black/50 to-transparent">
+    <div class="grid grid-cols-4 md:grid-cols-12 gap-x-[10px] px-[20px] md:px-[40px]">
+      <a href="./index.html" class="w-fit text-white col-span-2 md:col-span-3 text-[1.5rem] md:text-[20px]">부천청년평화포럼</a>
+      <nav class="col-span-2 col-start-3 md:col-span-5 md:col-start-9">
+        <ul class="flex justify-end items-center gap-3 md:gap-4">
+          <li class="l-header__list text-white text-[1.5rem] md:text-[20px] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-400 hover:after:w-full">
+            <a href="#about">소개</a>
+          </li>
+          <li class="l-header__list text-white text-[1.5rem] md:text-[20px] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-400 hover:after:w-full">
+            <a href="#sessions">세션</a>
+          </li>
+          <li class="l-header__list">
+            <button class="bg-accent text-primary rounded-full px-3 py-1 font-semibold text-[1.5rem] md:text-[20px] transition-transform duration-300 hover:scale-105">
+              <a href="https://forms.gle/YN3UYmLZp1zCWB116" target="_blank">신청하기</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="lenis w-full h-full overflow-y-scroll overflow-x-hidden overscroll-none">
+    <main class="main">
+      <div class="w-full min-h-[200svh] relative">
+        
+        <section class="h-[100svh] relative">
+          <div class="relative w-full grid grid-cols-4 md:grid-cols-12 gap-x-[10px] px-[20px] md:px-[40px] pt-[90px] z-[1] pointer-events-none">
+            <h1 class="font-display text-white col-span-4 md:col-span-12 text-[7rem] md:text-[10rem]">
+              <span class="block uppercase leading-none">2025</span>
+              <span class="block uppercase leading-none">제3회</span>
+              <span class="block uppercase leading-none">부천청년</span>
+              <span class="block uppercase leading-none">평화포럼</span>
+              <span class="block uppercase leading-none">&nbsp;</span>
+              <span class="block leading-none font-sans text-[3rem] md:text-[5rem]">2025.11.22</span>
+              <span class="block leading-none font-sans text-[3rem] md:text-[5rem]">10:00 - 16:00</span>
+              <span class="block leading-none font-sans text-[3rem] md:text-[5rem]">─</span>
+              <span class="block leading-none font-sans text-[3rem] md:text-[5rem]">부천 송내시민학습원</span>
+              <span class="block leading-none font-sans text-[3rem] md:text-[5rem]">2층 누리터</span>
+            </h1>
+          </div>
+          
+          <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+            <video id="bgVideo" preload="auto" autoplay loop muted playsinline class="w-full h-full object-cover relative z-0">
+              <source src="/assets/images/background.mp4" type="video/mp4" /> 
+            </video>
+          </div>
+        </section>
+
+        <section id="about" class="w-full relative">
+          <div class="sticky top-0 left-0 flex items-center justify-center w-full h-[100svh] text-center z-0">
+            <div class="max-w-[990px] px-[20px] md:px-0">
+              <p class="text-[30px] md:text-[3.2rem] font-normal" data-text-container="" aria-hidden="true">
+                <span data-text-hide=""><span data-text-show="">부천청년평화포럼은</span></span>
+                <span data-text-hide=""><span data-text-show="">평화를 사랑하며 사유하는</span></span>
+                <span data-text-hide=""><span data-text-show="">청년들이 지역사회와 세계에서</span></span>
+                <span data-text-hide=""><span data-text-show="">평화의 가치를 나누고</span></span>
+                <span data-text-hide=""><span data-text-show="">실천하는 학문의 장입니다.</span></span>
+                <span data-text-hide=""><span data-text-show="">&nbsp;</span></span>
+                <span data-text-hide=""><span data-text-show="">이번 포럼은 분단 80년이라는 </span></span>
+                <span data-text-hide=""><span data-text-show="">역사적 순간을 맞아</span></span>
+                <span data-text-hide=""><span data-text-show="">청년들이 분단의 현실을 마주하며</span></span>
+                <span data-text-hide=""><span data-text-show="">평화와 통일의 문제를 </span></span>
+                <span data-text-hide=""><span data-text-show="">삶과 어떻게 연결하고</span></span>
+                <span data-text-hide=""><span data-text-show="">사유할 것인가 하는 </span></span>
+                <span data-text-hide=""><span data-text-show="">근본적인 질문을 던집니다.</span></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-[120px] flex flex-col items-center gap-5 md:grid md:grid-cols-12 md:gap-x-[10px] md:px-[40px]">
+            <article class="bg-white relative z-[1] pt-[120%] w-[260px] mx-auto md:col-span-4 md:col-start-2 border border-[#eee] shadow-2xl rounded-xl">
+              <p class="absolute top-5 left-5 text-[3.2rem] md:text-[4rem] font-semibold z-[1]">2023</p>
+              <img src="./assets/images/poster-1.png" alt="제1회 포럼 포스터" class="absolute inset-0 w-full h-full object-contain z-0">
+              <div class="w-full absolute left-1/2 bottom-5 -translate-x-1/2 z-[1]">
+                <h3 class="w-fit text-[2.4rem] md:text-[3.2rem] font-semibold uppercase text-center mx-auto">제1회 포럼</h3>
+              </div>
+            </article>
+          </div>
+          <div class="mb-[120px] flex flex-col items-center gap-5 md:grid md:grid-cols-12 md:gap-x-[10px] md:px-[40px]">
+            <article class="bg-white relative z-[1] pt-[120%] w-[260px] mx-auto md:col-span-4 md:col-start-8 border border-[#eee] shadow-2xl rounded-xl">
+              <p class="absolute top-5 left-5 text-[3.2rem] md:text-[4rem] font-semibold z-[1]">2023</p>
+              <img src="./assets/images/poster-2.png" alt="제2회 포럼 포스터" class="absolute inset-0 w-full h-full object-contain z-0">
+              <div class="w-full absolute left-1/2 bottom-5 -translate-x-1/2 z-[1]">
+                <h3 class="w-fit text-[2.4rem] md:text-[3.2rem] font-semibold uppercase text-center mx-auto">제2회 포럼</h3>
+              </div>
+            </article>
+          </div>
+          <div class="mb-[120px] flex flex-col items-center gap-5 md:grid md:grid-cols-12 md:gap-x-[10px] md:px-[40px]">
+            <article class="bg-white relative z-[1] pt-[120%] w-[260px] mx-auto md:col-span-4 md:col-start-2 border border-[#eee] shadow-2xl rounded-xl">
+              <p class="absolute top-5 left-5 text-[3.2rem] md:text-[4rem] font-semibold z-[1]">2025</p>
+              <img src="./assets/images/poster-3.png" alt="제3회 포럼 포스터" class="absolute inset-0 w-full h-full object-contain z-0">
+              <div class="w-full absolute left-1/2 bottom-5 -translate-x-1/2 z-[1]">
+                <h3 class="w-fit text-[2.4rem] md:text-[3.2rem] font-semibold uppercase text-center mx-auto">Coming Soon</h3>
+              </div>
+            </article>
+          </div>
+          <div class="h-screen"></div> </section>
+
+        <section id="sessions" class="pb-[10rem] md:pb-[17rem]">
+          <div class="px-[20px] md:px-[40px]">
+            <div data-text-container="">
+              <p class="mb-[2.4rem] md:mb-[5.3rem]" aria-hidden="true">
+                <span data-text-hide=""><span data-text-show="" class="block text-[2.2rem] md:text-[52px] font-semibold leading-none uppercase">포럼 구성</span></span>
+              </p>
+            </div>
+            
+            <div class="flex flex-col gap-4 md:gap-8">
+              <article class="flex flex-col md:flex-row gap-8 md:gap-16 w-full p-4 md:p-[4.4rem] bg-white border border-[#eee] shadow-lg rounded-xl">
+                <div class="w-full md:w-[47.1rem] h-[24rem] md:h-[39.3rem] bg-black shrink-0 rounded-lg overflow-hidden">
+                  <img src="/assets/images/session-1-0.jpg" class="w-full h-full object-cover"/>
+                </div>
+                <div class="w-full md:w-[65.6rem] max-w-full md:pt-5 relative flex flex-col">
+                  <h3 class="text-[2.4rem] md:text-[4.8rem] font-semibold border-b-2 border-primary pb-[6px] mb-5 md:mb-10">Session 1</h3>
+                  <p class="text-[1.3rem] md:text-[2.4rem] leading-normal md:leading-snug mb-8 flex-grow">박건영 가톨릭대학교 명예교수님의 '전략적 실용주의 관점에서 바라본 한반도 문제' 강연이 진행됩니다.</p>
+                  <div class="w-fit ml-auto md:ml-0 mt-auto">
+                    <a href="#" class="flex items-center gap-1 w-fit group">
+                      <span class="block bg-primary text-white text-[1.3rem] font-medium px-[3.2rem] py-[1.2rem] rounded-md group-hover:rounded-3xl transition-all duration-400">준비 중</span>
+                      <span class="flex items-center justify-center w-[4.1rem] h-[4.1rem] bg-primary text-white rounded-full text-[1.5rem] font-semibold transition-transform duration-300 group-hover:scale-90">→</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="flex flex-col md:flex-row gap-8 md:gap-16 w-full p-4 md:p-[4.4rem] bg-white border border-[#eee] shadow-lg rounded-xl">
+                <div class="w-full md:w-[47.1rem] h-[24rem] md:h-[39.3rem] bg-black shrink-0 rounded-lg overflow-hidden">
+                  <img src="/assets/images/session-2-0.jpg" class="w-full h-full object-cover"/>
+                </div>
+                <div class="w-full md:w-[65.6rem] max-w-full md:pt-5 relative flex flex-col">
+                  <h3 class="text-[2.4rem] md:text-[4.8rem] font-semibold border-b-2 border-primary pb-[6px] mb-5 md:mb-10">Session 2</h3>
+                  <p class="text-[1.3rem] md:text-[2.4rem] leading-normal md:leading-snug mb-8 flex-grow">박영균 건국대학교 교수님과 함께 '분단 80년의 성찰, 평화-통일의 인문학'에 대해 이야기 나눕니다.</p>
+                  <div class="w-fit ml-auto md:ml-0 mt-auto">
+                    <a href="#" class="flex items-center gap-1 w-fit group">
+                      <span class="block bg-primary text-white text-[1.3rem] font-medium px-[3.2rem] py-[1.2rem] rounded-md group-hover:rounded-3xl transition-all duration-400">준비 중</span>
+                      <span class="flex items-center justify-center w-[4.1rem] h-[4.1rem] bg-primary text-white rounded-full text-[1.5rem] font-semibold transition-transform duration-300 group-hover:scale-90">→</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="flex flex-col md:flex-row gap-8 md:gap-16 w-full p-4 md:p-[4.4rem] bg-white border border-[#eee] shadow-lg rounded-xl">
+                <div class="w-full md:w-[47.1rem] h-[24rem] md:h-[39.3rem] bg-black shrink-0 rounded-lg overflow-hidden">
+                  <img src="/assets/images/cyopa.png" alt="라운드테이블 이미지" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full md:w-[65.6rem] max-w-full md:pt-5 relative flex flex-col">
+                  <h3 class="text-[2.4rem] md:text-[4.8rem] font-semibold border-b-2 border-primary pb-[6px] mb-5 md:mb-10">Round Table</h3>
+                  <p class="text-[1.3rem] md:text-[2.4rem] leading-normal md:leading-snug mb-8 flex-grow">강의에서 배운 내용을 함께 적용하고 실천해보며 한반도 평화의 청사진을 그려봅니다.</p>
+                  <div class="w-fit ml-auto md:ml-0 mt-auto">
+                    <a href="#" class="flex items-center gap-1 w-fit group">
+                      <span class="block bg-primary text-white text-[1.3rem] font-medium px-[3.2rem] py-[1.2rem] rounded-md group-hover:rounded-3xl transition-all duration-400">준비 중</span>
+                      <span class="flex items-center justify-center w-[4.1rem] h-[4.1rem] bg-primary text-white rounded-full text-[1.5rem] font-semibold transition-transform duration-300 group-hover:scale-90">→</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="form" class="w-full h-full relative bg-[url(/assets/images/letter.png)] bg-center bg-no-repeat bg-cover flex items-center justify-center">
+          <div class="relative z-[1] px-[20px] md:px-[40px] py-[7rem] md:py-[72px] text-center">
+            <h2 class="text-white text-[2rem] md:text-[24px] font-semibold uppercase">참여 신청</h2>
+            <div data-text-container="">
+              <p class="text-white text-[2.4rem] md:text-[52px] font-semibold uppercase my-6 md:my-10" aria-hidden="true">
+                <span data-text-hide=""><span data-text-show="" class="block leading-none">2025 부천청년평화포럼에</span></span>
+                <span data-text-hide=""><span data-text-show="" class="block leading-none">여러분들을 초대합니다.</span></span>
+              </p>
+              <div class="w-fit mx-auto">
+                <a href="https://forms.gle/YN3UYmLZp1zCWB116" target="_blank" class="flex items-center gap-1 w-fit group">
+                  <span class="block bg-accent text-primary text-[1.3rem] font-medium px-[3.2rem] py-[1.2rem] rounded-md group-hover:rounded-3xl transition-all duration-400">신청하기</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="w-full h-[58rem] md:h-[68rem] pt-[10rem] md:pt-[20rem] overflow-hidden relative">
+        <div class="px-[20px] md:px-[40px] flex flex-col gap-16 md:grid md:grid-cols-12 md:gap-x-[10px]">
+          <ul class="md:col-span-4">
+            <li class="w-full text-[14px] border-b border-dotted border-[#222] pb-[6px] mb-6">Contact</li>
+            <li><a href="mailto:pieceofpeacedrive@gmail.com" class="block w-fit text-[16px] md:text-[16px] relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#222] after:transition-all after:duration-600 hover:after:w-full">pieceofpeacedrive@gmail.com</a></li>
+          </ul>
+          <ul class="md:col-span-2 md:col-start-7">
+            <li class="w-full text-[14px] border-b border-dotted border-[#222] pb-[6px] mb-6">Navigation</li>
+            <li class="w-fit text-[16px] mb-[10px]"><a href="#about" class="block w-fit relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#222] after:transition-all after:duration-400 hover:after:w-full">소개</a></li>
+            <li class="w-fit text-[16px] mb-[10px]"><a href="#sessions" class="block w-fit relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#222] after:transition-all after:duration-400 hover:after:w-full">세션</a></li>
+            <li class="w-fit text-[16px] mb-[10px]"><a href="https://forms.gle/YN3UYmLZp1zCWB116" target="_blank" class="block w-fit relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#222] after:transition-all after:duration-400 hover:after:w-full">신청하기</a></li>
+          </ul>
+          <ul class="md:col-span-2 md:col-start-10">
+            <li class="w-full text-[14px] border-b border-dotted border-[#222] pb-[6px] mb-6">Host, Organizer</li>
+            <li class="w-fit text-[16px] mb-[10px]"><a href="https://www.piecepeace.org" target="_blank" class="block w-fit relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#222] after:transition-all after:duration-400 hover:after:w-full">피스오브피스</a></li>
+            <li class="w-fit text-[16px] mb-[10px]"><a href="https://www.ywcabucheon.org" target="_blank" class="block w-fit relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#222] after:transition-all after:duration-400 hover:after:w-full">부천YWCA</a></li>
+            <li class="w-fit text-[16px] mb-[10px]"><a href="https://www.ywcabucheon.org" target="_blank" class="block w-fit relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#222] after:transition-all after:duration-400 hover:after:w-full">부천YWCA 대학·청년 Y 협의회</a></li>
+            <li class="w-fit text-[16px] mb-[10px]"><a href="https://www.snpeace.or.kr/" target="_blank" class="block w-fit relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#222] after:transition-all after:duration-400 hover:after:w-full">남북평화재단</a></li>
+          </ul>
+        </div>
+        <p class="flex absolute bottom-[-0.6rem] md:bottom-[-2.3rem] left-0 text-[11vw] md:text-[11.9vw] font-semibold leading-none uppercase" data-footer-type="" aria-hidden="true">
+          <span class="hide"><span class="show">부</span></span><span class="hide"><span class="show">천</span></span><span class="hide"><span class="show">청</span></span><span class="hide"><span class="show">년</span></span><span class="hide"><span class="show">평</span></span><span class="hide"><span class="show">화</span></span><span class="hide"><span class="show">포</span></span><span class="hide"><span class="show">럼</span></span>
+          <span class="hide min-w-[2rem]"><span class="show"></span></span>
+          <span class="hide"><span class="show">2</span></span><span class="hide"><span class="show">0</span></span><span class="hide"><span class="show">2</span></span><span class="hide"><span class="show">5</span></span>
+        </p>
+      </footer>
+    </main>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
+  <script src="./app.js"></script>
+</body>
+</html>
